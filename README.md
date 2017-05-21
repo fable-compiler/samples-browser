@@ -15,7 +15,7 @@ run `dotnet fable npm-run build`.
 ## Adding a new sample
 
 - Create a new folder with the sample (take current samples as reference)
-- Add the project to the `Fable.Samples.sln` solution (CLI: `dotnet sln add my-sample`)
+- Add the project to the `Fable.Samples.sln` solution (CLI: `dotnet sln Fable.Samples.sln add my-sample.fsproj`)
 - Add the sample to the restore scripts
 
 > TODO: Automate restoring of each sample folder
