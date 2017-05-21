@@ -6,6 +6,7 @@ function resolve(filePath) {
 }
 
 var samples = {
+    "canvas": resolve("./canvas/Canvas.fsproj"),
     "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
