@@ -23,6 +23,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pacman", "pacman\Pacman.fsp
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pixi", "pixi\Pixi.fsproj", "{8E207908-1430-4435-B3E8-15E238DE1BDA}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pong", "pong\Pong.fsproj", "{B301D57D-20BC-4559-86E8-43D3C01AD8B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,5 +158,17 @@ Global
 		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x64.Build.0 = Release|x64
 		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x86.ActiveCfg = Release|x86
 		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x86.Build.0 = Release|x86
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|x64.ActiveCfg = Debug|x64
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|x64.Build.0 = Debug|x64
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|x86.ActiveCfg = Debug|x86
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Debug|x86.Build.0 = Debug|x86
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|x64.ActiveCfg = Release|x64
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|x64.Build.0 = Release|x64
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|x86.ActiveCfg = Release|x86
+		{B301D57D-20BC-4559-86E8-43D3C01AD8B7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
