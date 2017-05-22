@@ -15,6 +15,7 @@ var samples = {
     // "pacman": resolve("./pacman/Pacman.fsproj"),
     "pixi": resolve("./pixi/Pixi.fsproj"),
     "pong": resolve("./pong/Pong.fsproj"),
+    "samegame": resolve("./samegame/SameGame.fsproj"),
     // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
