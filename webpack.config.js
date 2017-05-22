@@ -6,11 +6,12 @@ function resolve(filePath) {
 }
 
 var samples = {
-    "canvas": resolve("./canvas/Canvas.fsproj"),
-    "funsnake": resolve("./funsnake/Funsnake.fsproj"),
+    // "canvas": resolve("./canvas/Canvas.fsproj"),
+    // "funsnake": resolve("./funsnake/Funsnake.fsproj"),
     "hokusai": resolve("./hokusai/Hokusai.fsproj"),
-    "ozmo": resolve("./ozmo/Ozmo.fsproj"),
-    "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
+    "lsystem": resolve("./lsystem/LSystem.fsproj"),
+    // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
+    // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
 
 var babelOptions = {
