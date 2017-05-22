@@ -9,6 +9,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "React.TodoMVC", "react-todo
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Canvas", "canvas\Canvas.fsproj", "{B3A83CC0-C80E-4BB0-965C-15369934137C}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Funsnake", "funsnake\Funsnake.fsproj", "{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{B3A83CC0-C80E-4BB0-965C-15369934137C}.Release|x64.Build.0 = Release|x64
 		{B3A83CC0-C80E-4BB0-965C-15369934137C}.Release|x86.ActiveCfg = Release|x86
 		{B3A83CC0-C80E-4BB0-965C-15369934137C}.Release|x86.Build.0 = Release|x86
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|x64.ActiveCfg = Debug|x64
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|x64.Build.0 = Debug|x64
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|x86.ActiveCfg = Debug|x86
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Debug|x86.Build.0 = Debug|x86
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|x64.ActiveCfg = Release|x64
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|x64.Build.0 = Release|x64
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|x86.ActiveCfg = Release|x86
+		{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
