@@ -12,6 +12,7 @@ var samples = {
     // "lsystem": resolve("./lsystem/LSystem.fsproj"),
     "mandelbrot": resolve("./mandelbrot/Mandelbrot.fsproj"),
     "mario": resolve("./mario/Mario.fsproj"),
+    "pacman": resolve("./pacman/Pacman.fsproj"),
     // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
