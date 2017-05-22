@@ -2,7 +2,7 @@
 
 ## Building and running the samples
 
-- Restore dependencies: `install.cmd` on Windows or `sh install.sh` on Unix.
+- Restore dependencies: `restore.cmd` on Windows or `sh restore.sh` on Unix.
 - Start Fable and Webpack dev server: `dotnet fable npm-run start`
 - In your browser, open `localhost:8080/[EXAMPLE]` (e.g. `http://localhost:8080/ozmo`)
 
@@ -15,8 +15,7 @@ run `dotnet fable npm-run build`.
 ## Adding a new sample
 
 - Create a new folder with the sample (take current samples as reference)
-- Add the project to the `Fable.Samples.sln` solution (CLI: `dotnet sln add my-sample`)
-- Add the sample to the restore scripts
+- Add the project to the `Fable.Samples.sln` solution (CLI: `dotnet sln Fable.Samples.sln add my-sample.fsproj`)
 
 > TODO: Automate restoring of each sample folder
 
@@ -30,5 +29,3 @@ To reference the resulting bundle from the sample `index.html`, use:
 ```html
 <script src="/build/[sample].js"></script>
 ```
-
-

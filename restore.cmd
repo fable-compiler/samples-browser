@@ -1,4 +1,3 @@
-yarn install
-dotnet restore Fable.proj
-dotnet restore ozmo
-dotnet restore react-todomvc
+call yarn install
+call dotnet restore Fable.proj
+call dotnet restore Fable.Samples.sln
