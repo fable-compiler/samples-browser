@@ -21,6 +21,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mario", "mario\Mario.fsproj
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pacman", "pacman\Pacman.fsproj", "{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pixi", "pixi\Pixi.fsproj", "{8E207908-1430-4435-B3E8-15E238DE1BDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -142,5 +144,17 @@ Global
 		{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}.Release|x64.Build.0 = Release|x64
 		{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}.Release|x86.ActiveCfg = Release|x86
 		{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}.Release|x86.Build.0 = Release|x86
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|x64.ActiveCfg = Debug|x64
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|x64.Build.0 = Debug|x64
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|x86.ActiveCfg = Debug|x86
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Debug|x86.Build.0 = Debug|x86
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x64.ActiveCfg = Release|x64
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x64.Build.0 = Release|x64
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x86.ActiveCfg = Release|x86
+		{8E207908-1430-4435-B3E8-15E238DE1BDA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

@@ -10,9 +10,10 @@ var samples = {
     // "funsnake": resolve("./funsnake/Funsnake.fsproj"),
     // "hokusai": resolve("./hokusai/Hokusai.fsproj"),
     // "lsystem": resolve("./lsystem/LSystem.fsproj"),
-    "mandelbrot": resolve("./mandelbrot/Mandelbrot.fsproj"),
-    "mario": resolve("./mario/Mario.fsproj"),
-    "pacman": resolve("./pacman/Pacman.fsproj"),
+    // "mandelbrot": resolve("./mandelbrot/Mandelbrot.fsproj"),
+    // "mario": resolve("./mario/Mario.fsproj"),
+    // "pacman": resolve("./pacman/Pacman.fsproj"),
+    "pixi": resolve("./pixi/Pixi.fsproj"),
     // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
@@ -40,7 +41,8 @@ module.exports = {
   },
   externals: {
     "react": "React",
-    "react-dom": "ReactDOM"
+    "react-dom": "ReactDOM",
+    "PIXI": "PIXI"
   },
   devServer: {
     contentBase: resolve('.'),
