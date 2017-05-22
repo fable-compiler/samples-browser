@@ -10,6 +10,7 @@ var samples = {
     // "funsnake": resolve("./funsnake/Funsnake.fsproj"),
     "hokusai": resolve("./hokusai/Hokusai.fsproj"),
     "lsystem": resolve("./lsystem/LSystem.fsproj"),
+    "mandelbrot": resolve("./mandelbrot/Mandelbrot.fsproj"),
     // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj")
 }
