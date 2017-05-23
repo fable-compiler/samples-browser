@@ -27,6 +27,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pong", "pong\Pong.fsproj", 
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SameGame", "samegame\SameGame.fsproj", "{F1B77ED4-51B2-445C-9D58-B9719A4735E6}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Vue.TodoMVC", "vue-todomvc\Vue.TodoMVC.fsproj", "{4BA5F719-AB99-4119-8285-E8288D676609}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -184,5 +186,17 @@ Global
 		{F1B77ED4-51B2-445C-9D58-B9719A4735E6}.Release|x64.Build.0 = Release|x64
 		{F1B77ED4-51B2-445C-9D58-B9719A4735E6}.Release|x86.ActiveCfg = Release|x86
 		{F1B77ED4-51B2-445C-9D58-B9719A4735E6}.Release|x86.Build.0 = Release|x86
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|x64.ActiveCfg = Debug|x64
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|x64.Build.0 = Debug|x64
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|x86.ActiveCfg = Debug|x86
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Debug|x86.Build.0 = Debug|x86
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|x64.ActiveCfg = Release|x64
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|x64.Build.0 = Release|x64
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|x86.ActiveCfg = Release|x86
+		{4BA5F719-AB99-4119-8285-E8288D676609}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
