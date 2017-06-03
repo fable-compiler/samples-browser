@@ -7,3 +7,5 @@ nuget Fable.Core 1.0.8
 
 nuget Fable.PowerPack
 nuget Fable.React
+
+github fable-compiler/fable-graphics bindings/fable-import-d3/Fable.Import.D3.fs

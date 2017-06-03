@@ -568,3 +568,6 @@ NUGET
       System.Text.Encoding (>= 4.3) - restriction: || (&& (< net45) (>= netstandard13) (< win8) (< wpa81)) (>= dnxcore50)
       System.Threading (>= 4.3) - restriction: || (&& (< net45) (>= netstandard13) (< win8) (< wpa81)) (>= dnxcore50)
       System.Xml.ReaderWriter (>= 4.3) - restriction: || (&& (< net45) (>= netstandard10) (< netstandard13) (< win8) (< wp8) (< wpa81)) (&& (< net45) (>= netstandard13) (< win8) (< wpa81)) (>= dnxcore50)
+GITHUB
+  remote: fable-compiler/fable-graphics
+    bindings/fable-import-d3/Fable.Import.D3.fs (777629763c49a7632dd7885b058e9aa21cbf28c3)

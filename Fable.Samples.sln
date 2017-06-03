@@ -33,6 +33,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "webGLTerrain", "webGLTerrai
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Redux.TodoMVC", "redux-todomvc\Redux.TodoMVC.fsproj", "{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "d3map", "d3map\d3map.fsproj", "{F98BC72C-A3F4-4944-86F7-A323B39E7250}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -226,5 +228,17 @@ Global
 		{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}.Release|x64.Build.0 = Release|x64
 		{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}.Release|x86.ActiveCfg = Release|x86
 		{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}.Release|x86.Build.0 = Release|x86
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|x64.ActiveCfg = Debug|x64
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|x64.Build.0 = Debug|x64
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|x86.ActiveCfg = Debug|x86
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Debug|x86.Build.0 = Debug|x86
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x64.ActiveCfg = Release|x64
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x64.Build.0 = Release|x64
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x86.ActiveCfg = Release|x86
+		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
