@@ -18,8 +18,10 @@ var samples = {
     // "samegame": resolve("./samegame/SameGame.fsproj"),
     // "ozmo": resolve("./ozmo/Ozmo.fsproj"),
     // "react-todomvc": resolve("./react-todomvc/React.TodoMVC.fsproj"),
+    "redux-todomvc": resolve("./redux-todomvc/Redux.TodoMVC.fsproj"),
     // "vue-todomvc": resolve("./vue-todomvc/Vue.TodoMVC.fsproj"),
-    "webgl-terrain": resolve("./webGLTerrain/webGLTerrain.fsproj")
+    // "webgl-terrain": resolve("./webGLTerrain/webGLTerrain.fsproj"),
+    
 }
 
 var babelOptions = {
@@ -47,7 +49,8 @@ module.exports = {
     "react": "React",
     "react-dom": "ReactDOM",
     "PIXI": "PIXI",
-    "three": "THREE"
+    "three": "THREE",
+    "redux": "Redux"
   },
   devServer: {
     contentBase: resolve('.'),

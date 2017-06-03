@@ -17,3 +17,4 @@ dotnet restore react-todomvc/React.TodoMVC.fsproj
 dotnet restore samegame/SameGame.fsproj
 dotnet restore vue-todomvc/Vue.TodoMVC.fsproj
 dotnet restore webGLTerrain/webGLTerrain.fsproj
+dotnet restore redux-todomvc/Redux.TodoMVC.fsproj
