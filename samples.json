@@ -14,5 +14,6 @@
     "react-todomvc": "./react-todomvc/React.TodoMVC.fsproj",
     "redux-todomvc": "./redux-todomvc/Redux.TodoMVC.fsproj",
     "vue-todomvc": "./vue-todomvc/Vue.TodoMVC.fsproj",
-    "webgl-terrain": "./webGLTerrain/webGLTerrain.fsproj"
+    "webgl-terrain": "./webGLTerrain/webGLTerrain.fsproj",
+    "inferno": "./inferno/Inferno.fsproj"
 }
