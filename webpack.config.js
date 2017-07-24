@@ -1,15 +1,19 @@
+var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
+var json5 = require("./public/lib/json5.js");
 
 function resolve(filePath) {
   return path.join(__dirname, filePath)
 }
 
 function getSamples() {
-  var samples = require(resolve("public/samples.json"));
-  for (var key in samples) {
-    // Resolve relative paths
-    samples[key] = resolve(samples[key])
+  var samples =  {};
+  var categories = json5.parse(fs.readFileSync(resolve("public/samples.json5")));
+  for (var key in categories) {
+    for (var key2 in categories[key]) {
+      samples[key2] = path.join(__dirname, "src", key2, categories[key][key2].entry)
+    }
   }
   return samples;
 }
