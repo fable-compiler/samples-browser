@@ -30,6 +30,7 @@ NUGET
       Fable.Core (>= 1.1.2) - restriction: >= netstandard1.6
       Fable.Import.Browser (>= 0.1) - restriction: >= netstandard1.6
       FSharp.Core (>= 4.2.1) - restriction: >= netstandard1.6
+    FAKE (4.62.5)
     FSharp.Compiler.Service (13.0) - restriction: >= netcore1.0
       FSharp.Core (>= 4.1.17) - restriction: >= netstandard1.6
       Microsoft.DiaSymReader (>= 1.1) - restriction: >= netstandard1.6
