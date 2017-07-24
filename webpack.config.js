@@ -31,6 +31,11 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
+    alias: {
+      // This is necessary to compile Vue templates on the fly
+      // See https://github.com/vuejs-templates/webpack/issues/215
+      vue: 'vue/dist/vue.js'
+    },
     modules: [
       "node_modules", resolve("node_modules")
     ]
