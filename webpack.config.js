@@ -6,7 +6,7 @@ function resolve(filePath) {
 }
 
 function getSamples() {
-  var samples = require(resolve("./samples.json"));
+  var samples = require(resolve("public/samples.json"));
   for (var key in samples) {
     // Resolve relative paths
     samples[key] = resolve(samples[key])
@@ -26,13 +26,13 @@ module.exports = {
   devtool: "source-map",
   entry: getSamples(),
   output: {
-    filename: "[name].js",
-    path: resolve('./build'),
-    publicPath: '/build'
+    filename: "[name]/bundle.js",
+    path: resolve('public'),
+    publicPath: '/'
   },
   resolve: {
     modules: [
-      "node_modules", resolve("./node_modules/")
+      "node_modules", resolve("node_modules")
     ]
   },
   externals: {
@@ -46,7 +46,7 @@ module.exports = {
     "d3": "d3"
   },
   devServer: {
-    contentBase: resolve('.'),
+    contentBase: resolve('public'),
     port: 8080
   },
   module: {
