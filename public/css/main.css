@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #202020;
+}
+.navbar .title {
+  color: #686868;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.navbar .navbar-burger span {
+  background-color: white;
+}
+.navbar .navbar-burger:hover {
+  background-color: #686868;
+}
+.navbar .navbar-start .navbar-item {
+  color: white;
+}
+.navbar .navbar-start .navbar-item.is-active {
+  background-color: #686868;
+}
+.navbar .navbar-start .navbar-item:hover {
+  color: black;
+}
+.twitter {
+  color: #55acee !important;
+  border-color: #55acee;
+}
+.github {
+  color: #202020 !important;
+  border-color: #202020;
+}
+.container {
+  padding: 5px;
+}
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

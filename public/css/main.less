@@ -1,0 +1,51 @@
+// Colors
+@purple: #7a325d;
+@blue: #0055a4;
+@black: #202020;
+
+.navbar {
+  background-color: @black;
+  .title {
+    color: #686868;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .navbar-burger span {
+    background-color: white;
+  }
+  .navbar-burger:hover {
+    background-color: #686868;
+  }
+  .navbar-start {
+    .navbar-item {
+      color: white;
+    }
+    .navbar-item.is-active {
+      background-color: #686868;
+    }
+    .navbar-item:hover {
+      color: black;
+    }
+  }
+}
+
+.twitter {
+  color: #55acee !important; // Override bulma
+  border-color: #55acee;
+}
+
+.github {
+  color: @black !important; // Override bulma
+  border-color: @black;
+}
+
+.container {
+  padding: 5px;
+}
+
+// Needed otherwise iframes show a disabled scrollbar
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

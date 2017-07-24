@@ -2,11 +2,51 @@
 <html>
 
 <head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <title>Fable Browser Samples</title>
+  <title>Fable Samples</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/fable.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
 </head>
 
 <body>
+  <nav class="navbar ">
+    <div class="navbar-brand">
+      <a class="navbar-item title is-4" href="http://fable.io">
+        <!-- <img src="img/fable.ico" alt="Fable icon" height="28"> -->
+        Fable
+      </a>
+      <!-- <a class="navbar-item title is-4" href="http://fable.io">Fable</a> -->
+      <div class="navbar-burger burger" data-target="navMenuFable">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div id="navMenuFable" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item " href="http://fable.io/">Home</a>
+        <a class="navbar-item " href="http://fable.io/samples-browser">Samples</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control"><a class="button twitter" href="https://twitter.com/FableCompiler">
+              <span class="icon"><i class="fa fa-twitter"></i></span><span>Twitter</span>
+            </a></p>
+            <p class="control"><a class="button github" href="https://gitter.im/fable-compiler/Fable">
+              <span class="icon"><i class="fa fa-comments"></i></span><span>Gitter</span>
+            </a></p>
+            <p class="control"><a class="button github" href="https://github.com/fable-compiler/Fable">
+              <span class="icon"><i class="fa fa-github"></i></span><span>Github</span>
+            </a></p>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <!--
     <h1>Samples list</h1>
     <ul>
         <li>
@@ -57,7 +97,34 @@
         <li>
             <a href="./webgl-terrain/index.html">WebGL Terrain</a>
         </li>
-    </ul>
+    </ul> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any nav burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
 </body>
 
 </html>

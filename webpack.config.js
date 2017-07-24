@@ -16,7 +16,11 @@ function getSamples() {
 
 var babelOptions = {
   presets: [["es2015", { "modules": false }]],
-  plugins: ["transform-runtime"]
+  plugins: [["transform-runtime", {
+    helpers: true,
+    polyfill: false,
+    regenerator: false
+  }]]
 };
 
 var isProduction = process.argv.indexOf("-p") >= 0;
