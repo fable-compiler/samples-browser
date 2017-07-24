@@ -111,12 +111,14 @@ Target "InstallDotNetSdk"  (fun () ->
 
 Target "Restore" (fun () ->
     Util.run root "yarn" "install"
-    Util.run (root </> "src") dotnetExePath "restore"
+    Util.run root dotnetExePath "restore Fable.Samples.sln"
 )
 
-Target "Build" (fun () ->
-    Util.run (root </> "src") dotnetExePath "fable yarn-build"
-)
+let build () =
+    Util.run root dotnetExePath "fable yarn-build --port free"
+
+Target "Build" build
+Target "BuildNoRestore" build
 
 let bumpVersion() =
     let mutable newVersion = 0
@@ -133,7 +135,7 @@ let commit workingDir files message =
     | None -> StageAll workingDir
     Git.Commit.Commit workingDir message
 
-Target "Publish" (fun () ->
+let publish () =
     let publishBranch = "gh-pages"
     let publishDir, tempDir = root </> "public", root </> "temp"
     let githubLink = sprintf "https://github.com/%s/%s.git" gitOwner gitProject
@@ -148,13 +150,18 @@ Target "Publish" (fun () ->
     String.Format("Update site ({0:yyyy/MM/dd HH:mm})", DateTime.UtcNow)
     |> commit tempDir None
     Branches.push tempDir
-)
+
+Target "Publish" publish
+Target "PublishNoRestore" publish
 
 "Clean"
 ==> "InstallDotNetSdk"
 ==> "Restore"
 ==> "Build"
 ==> "Publish"
+
+"BuildNoRestore"
+==> "PublishNoRestore"
 
 // Start build
 RunTargetOrDefault "Build"
