@@ -2,62 +2,46 @@
 <html>
 
 <head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <title>Fable Browser Samples</title>
+  <title>Fable Samples</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/fable.ico" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700|Roboto+Mono" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/main.css" /> -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
 </head>
 
 <body>
-    <h1>Samples list</h1>
-    <ul>
-        <li>
-            <a href="./canvas/index.html">Canvas</a>
-        </li>
-        <li>
-            <a href="./d3map/index.html">D3 Map</a>
-        </li>
-        <li>
-            <a href="./funsnake/index.html">Fun Snake</a>
-        </li>
-        <li>
-            <a href="./hokusai/index.html">Hokusai</a>
-        </li>
-        <li>
-            <a href="./lsystem/index.html">LSystem</a>
-        </li>
-        <li>
-            <a href="./mandelbrot/index.html">Mandelbrot</a>
-        </li>
-        <li>
-            <a href="./mario/index.html">Mario</a>
-        </li>
-        <li>
-            <a href="./ozmo/index.html">Ozmo</a>
-        </li>
-        <li>
-            <a href="./pacman/index.html">Pacman</a>
-        </li>
-        <li>
-            <a href="./pixi/index.html">Pixi.JS</a>
-        </li>
-        <li>
-            <a href="./pong/index.html">Pong</a>
-        </li>
-        <li>
-            <a href="./react-todomvc/index.html">React Todo MVC</a>
-        </li>
-        <li>
-            <a href="./redux-todomvc/index.html">Redux Todo MVC</a>
-        </li>
-        <li>
-            <a href="./samegame/index.html">Samegame</a>
-        </li>
-        <li>
-            <a href="./vue-todomvc/index.html">Vue Todo MVC</a>
-        </li>
-        <li>
-            <a href="./webgl-terrain/index.html">WebGL Terrain</a>
-        </li>
-    </ul>
+  <h1>Fable Samples</h1>
+  <h2>Fun and Games</h2>
+  <ul id="games-list"></ul>
+  <h2>Productivity</h2>
+  <ul id="productivity-list"></ul>
+  <h2>Visualizations</h2>
+  <ul id="visual-list"></ul>
+  <script src="lib/json5.js"></script>
+  <script>
+    fetch('samples.json5')
+      .then(function(response) {
+        return response.text();
+      })
+      .then(function(json) {
+        var samplesJson = JSON5.parse(json);
+        ["games", "productivity", "visual"].forEach(function(category) {
+          var el = document.getElementById(category + "-list");
+          for (var key in samplesJson[category]) {
+            var node = document.createElement("li");
+            var link = document.createElement("a");
+            link.setAttribute("href", key);
+            link.appendChild(document.createTextNode(samplesJson[category][key].title));
+            node.appendChild(link);
+            el.appendChild(node);
+          }
+        });
+      });
+  </script>
 </body>
 
 </html>
