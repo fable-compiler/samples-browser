@@ -2,6 +2,7 @@ module DocGenerator.Helpers
 
 open System
 open System.Collections.Generic
+open Fable.Core
 open Fable.Core.JsInterop
 open Fable.Import
 open Fable.Import.Node.Globals
@@ -28,8 +29,12 @@ let parseTemplate (path: string) (context: (string*obj) list) =
     createObj context |> template
 
 /// Parses a markdown file
-let parseMarkdown (path: string) =
+let parseMarkdownFile (path: string) =
     Fs.readFileSync(path).toString() |> marked
+
+/// Parses a markdown string
+let parseMarkdown (str: string) =
+    marked str
 
 /// Parses a React element invoking ReactDOMServer.renderToString
 let parseReact (el: React.ReactElement) =
@@ -56,4 +61,13 @@ let writeFile (path: string) (content: string) =
 let readFile (path: string) =
     Fs.readFileSync(path).toString()
 
-let inline Class x = Fable.Helpers.React.Props.ClassName x
+// React helpers
+open Fable.Helpers.React.Props
+
+let inline Class x = ClassName x
+
+type [<Pojo>] InnerHtml =
+  { __html: string }
+
+let setMarkdown (markdown: string) =
+  DangerouslySetInnerHTML { __html = parseMarkdown markdown }

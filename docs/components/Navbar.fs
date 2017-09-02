@@ -20,8 +20,9 @@ let navButton classy href faClass txt =
 let navButtons =
   div [Class "navbar-item"]
     [ Field.field [ Field.isGroupedLeft ]
-        [ navButton "twitter" "https://twitter.com/FableCompiler" "fa-twitter" "Twitter"
-          navButton "github" "https://gitter.im/fable-compiler/Fable" "fa-comments" "Gitter" ] ]
+        [ navButton "twitter" "https://twitter.com/FableCompiler" "fa-twitter" "Share the love!"
+          navButton "github" "https://gitter.im/fable-compiler/Fable" "fa-comments" "Chat"
+          navButton "github" "https://github.com/fable-compiler/Fable" "fa-github" "Contribute" ] ]
 
 let menuItem label page currentPage =
     a [

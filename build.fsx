@@ -115,11 +115,11 @@ Target "InstallDotNetSdk"  (fun () ->
 
 Target "Restore" (fun () ->
     Util.run root "yarn" "install"
-    Util.run root dotnetExePath "restore Fable.Samples.sln"
+    Util.run root dotnetExePath "restore Fable.Samples.Browser.sln"
 )
 
 let build () =
-    Util.run root dotnetExePath "fable yarn-build --port free"
+    Util.run (root </> "src") dotnetExePath "fable yarn-build --port free"
 
 Target "Build" build
 Target "BuildNoRestore" build

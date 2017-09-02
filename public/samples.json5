@@ -1,28 +1,22 @@
 {
   "games": {
-    "funsnake": {
-      "entry": "Funsnake.fsproj",
-      "title": "Funsnake",
-      "desc": "Classic snake game",
-      "img": "funsnake.png"
-    },
     "mario": {
       "entry": "Mario.fsproj",
       "title": "Super Fable Mario",
       "desc": "Mario clone, based on functional reactive [sample written in Elm](http://debug.elm-lang.org/edit/Mario.elm). The Fable version is using HTML 5 canvas to render the background and an `img` tag showing the Mario (using animated GIFs).",
       "img": "mario.png"
     },
+    "ozmo": {
+      "entry": "Ozmo.fsproj",
+      "title": "Ozmo Game",
+      "desc": "Phil Trelford's [classic Ozmo game](https://twitter.com/ptrelford/status/475395178208174080), originally hosted [on BitBucket](https://bitbucket.org/ptrelford/ozmo) ported to Fable! Shows how to handle keyboard events and use HTML5 canvas. You can also get it (as a JavaScript app) from the [Windows Store](https://www.microsoft.com/en-gb/store/apps/ozmo/9nblggh4rjng).",
+      "img": "ozmo.png"
+    },
     "pacman": {
       "entry": "Pacman.fsproj",
       "title": "Pacman",
       "desc": "Pacman finds himself in a grid filled with monsters... This is the most complex sample here. It involves rendering the maze, AI for the ghosts, user interaction and even playing sound effects. The game has some brief commentary, but if you want to learn Fable, look at the above examples first.",
       "img": "pacman.png"
-    },
-    "pixi": {
-      "entry": "Pixi.fsproj",
-      "title": "Pixi sample",
-      "desc": "Simple renderization with [PixiJS](http://www.pixijs.com/)",
-      "img": "pixi.jpeg"
     },
     "pong": {
       "entry": "Pong.fsproj",
@@ -36,12 +30,18 @@
       "desc": "This demo shows a Fable implementation of SameGame. The functional implementation of the game follows the type-first design approach and consists of three main components: types, game logic and front end. Contributed by [Leif Battermann](https://twitter.com/leifbattermann).",
       "img": "samegame.png"
     },
-    "ozmo": {
-      "entry": "Ozmo.fsproj",
-      "title": "Ozmo Game",
-      "desc": "Phil Trelford's [classic Ozmo game](https://twitter.com/ptrelford/status/475395178208174080), originally hosted [on BitBucket](https://bitbucket.org/ptrelford/ozmo) ported to Fable! Shows how to handle keyboard events and use HTML5 canvas. You can also get it (as a JavaScript app) from the [Windows Store](https://www.microsoft.com/en-gb/store/apps/ozmo/9nblggh4rjng).",
-      "img": "ozmo.png"
-    }
+    "funsnake": {
+      "entry": "Funsnake.fsproj",
+      "title": "Funsnake",
+      "desc": "Classic snake game that can be played either by keyboard or mouse/touch. Originally developed by [Alberto Ayuso](https://twitter.com/ayuscode) for FunScript.",
+      "img": "funsnake.png"
+    },
+    "pixi": {
+      "entry": "Pixi.fsproj",
+      "title": "Pixi sample",
+      "desc": "Simple renderization with [PixiJS](http://www.pixijs.com/), a fast and flexible library to render 2D WebGL content.",
+      "img": "pixi.jpeg"
+    },
   },
   "visual": {
     "d3map": {
@@ -62,18 +62,18 @@
       "desc": "This demo is based on [L-system workshop](https://github.com/Andrea/Lsystem) by Andrea Magnorsky and Ross McKinlay. Rather than working on the tasks they gave us, Tomas Petricek compiled it with Fable, so that you can play with it in a browser!",
       "img": "lsystem.png"
     },
+    "webgl-terrain": {
+      "entry": "WebGL.Terrain.fsproj",
+      "title": "WebGL Geometry Terrain",
+      "desc": "This demo is a Fable port of the [WebGL Geometry Terrain](http://threejs.org/examples/#webgl_geometry_terrain) three.js demo. It uses the three.js library to randomly generate a 3D terrain which can be navigated in a first-person view. The code was originally written by [John Quigley](https://github.com/jmquigs) for FunScript.",
+      "img": "webGLTerrain.png"
+    },
     "mandelbrot": {
       "entry": "Mandelbrot.fsproj",
       "title": "Mandelbrot Fractal",
       "desc": "Generate fractals with HTML5 canvas.",
       "img": "mandelbrot.png"
     },
-    "webgl-terrain": {
-      "entry": "WebGL.Terrain.fsproj",
-      "title": "WebGL Geometry Terrain",
-      "desc": "This demo is a Fable port of the [WebGL Geometry Terrain](http://threejs.org/examples/#webgl_geometry_terrain) three.js demo. It uses the three.js library to randomly generate a 3D terrain which can be navigated in a first-person view. The code was originally written by [John Quigley](https://github.com/jmquigs) for FunScript.",
-      "img": "webGLTerrain.png"
-    }
   },
   "productivity": {
     "redux-todomvc": {

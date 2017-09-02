@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
 var fableUtils = require("fable-utils");
-var json5 = require("./public/lib/json5.js");
+var json5 = require("json5");
 
 function resolve(filePath) {
   return path.join(__dirname, filePath)

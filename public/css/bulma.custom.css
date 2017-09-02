@@ -5728,7 +5728,15 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+html, body {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.container {
+  padding: 5px; }
+
 .navbar {
+  font-size: 1.2em;
   background-color: #202020; }
   .navbar .title {
     color: #686868;
@@ -5765,11 +5773,15 @@ label.panel-block {
     max-height: 200px; }
     @media screen and (max-width: 500px) {
       .fable-header .fable-logo {
-        max-height: 100px; } }
+        max-height: 125px; } }
 
-.container {
-  padding: 5px; }
+.fable-introduction {
+  font-size: 1.2em;
+  margin: 0 5px; }
 
-html, body {
-  overflow-y: auto;
-  overflow-x: hidden; }
+.fable-samples {
+  margin: 0 5px; }
+  .fable-samples > h1 {
+    margin-top: 25px; }
+  .fable-samples .media-content h1 {
+    margin-bottom: 5px; }

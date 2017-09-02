@@ -9,7 +9,16 @@ $family-sans-serif: "Josefin Sans", sans-serif
 
 @import "../../node_modules/bulma/bulma"
 
+// Needed otherwise iframes show a disabled scrollbar
+html, body
+  overflow-y: auto
+  overflow-x: hidden
+
+.container
+  padding: 5px
+
 .navbar
+  font-size: 1.2em
   background-color: $black
   .title
     color: #686868
@@ -46,15 +55,19 @@ $family-sans-serif: "Josefin Sans", sans-serif
   .fable-logo
     max-height: 200px
     @media screen and (max-width: 500px)
-      max-height: 100px
-  h1
-    // color: darken(gold, 10%) //invert($fable-blue)
-    // font-weight: normal
+      max-height: 125px
+  // h1
+  //   color: darken(gold, 10%) //invert($fable-blue)
+  //   font-weight: normal
 
-.container
-  padding: 5px
+.fable-introduction
+  font-size: 1.2em
+  margin: 0 5px
 
-// Needed otherwise iframes show a disabled scrollbar
-html, body
-  overflow-y: auto
-  overflow-x: hidden
+.fable-samples
+  margin: 0 5px
+  > h1
+    margin-top: 25px
+  .media-content
+    h1
+      margin-bottom: 5px
