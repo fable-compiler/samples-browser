@@ -6,6 +6,7 @@ open Fable.Import
 open Fable.Import.Node.Exports
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
+open Fulma.Elements
 open Components
 open Helpers
 
@@ -48,7 +49,6 @@ let renderSamples() =
     |> Seq.toList
 
   div [Class "content"; Style [Margin "10px"]] [
-    h1 [] [str "Fable Samples"]
     h2 [] [str "Fun and Games"]
     ul [] (samplesToList samples.["games"])
     h2 [] [str "Productivity"]
@@ -57,11 +57,29 @@ let renderSamples() =
     ul [] (samplesToList samples.["visual"])
   ]
 
+let renderHeader() =
+  section [Class "fable-header"] [
+    img [
+      Class "fable-logo"
+      Src "./img/fable_logo.png"
+    ]
+    div [Class "flex-1 has-text-right"] [
+      h1 [Class "title is-1"] [str "Samples"]
+      h1 [Class "subtitle is-3"] [str "Learn by playing!"]
+    ]
+  ]
+
+let renderBody() =
+  div [] [
+    renderHeader()
+    renderSamples()
+  ]
+
 let render (info: PageInfo) =
     [ "title" ==> info.Title
       "root" ==> Path.relative(info.TargetPath, publicPath)
       "navbar" ==> (Navbar.root info.NavbarActivePage |> parseReactStatic)
-      "body" ==> (renderSamples() |> parseReactStatic) ]
+      "body" ==> (renderBody() |> parseReactStatic) ]
     |> parseTemplate templatePath
     |> writeFile info.TargetPath
 

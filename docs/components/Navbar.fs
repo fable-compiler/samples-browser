@@ -42,6 +42,7 @@ let root currentPage =
     div [Id Navbar.MenuId; classList ["navbar-menu", true]] [
       div [Class "navbar-start"] [
         menuItem "Home" Navbar.Home currentPage
+        menuItem "REPL" Navbar.Repl currentPage
         menuItem "Docs" Navbar.Docs currentPage
         menuItem "Samples" Navbar.Samples currentPage
         menuItem "FableConf" Navbar.FableConf currentPage

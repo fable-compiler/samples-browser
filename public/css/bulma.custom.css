@@ -101,7 +101,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 code,
 pre {
@@ -5752,6 +5752,20 @@ label.panel-block {
 .github {
   color: #202020 !important;
   border-color: #202020; }
+
+.flex-1 {
+  flex: 1; }
+
+.fable-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #87c5fd, white); }
+  .fable-header .fable-logo {
+    max-height: 200px; }
+    @media screen and (max-width: 500px) {
+      .fable-header .fable-logo {
+        max-height: 100px; } }
 
 .container {
   padding: 5px; }
