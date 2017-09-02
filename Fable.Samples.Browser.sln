@@ -3,39 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Ozmo", "src/ozmo/Ozmo.fsproj", "{A657D68F-2FF8-4D4E-94F4-03373E48D793}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Ozmo", "src\ozmo\Ozmo.fsproj", "{A657D68F-2FF8-4D4E-94F4-03373E48D793}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "React.TodoMVC", "src/react-todomvc/React.TodoMVC.fsproj", "{34E52684-F16A-4255-998B-15C50C559EE8}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "React.TodoMVC", "src\react-todomvc\React.TodoMVC.fsproj", "{34E52684-F16A-4255-998B-15C50C559EE8}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Canvas", "src/canvas/Canvas.fsproj", "{B3A83CC0-C80E-4BB0-965C-15369934137C}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Canvas", "src\canvas\Canvas.fsproj", "{B3A83CC0-C80E-4BB0-965C-15369934137C}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Funsnake", "src/funsnake/Funsnake.fsproj", "{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Funsnake", "src\funsnake\Funsnake.fsproj", "{63F3424A-6DB7-4D61-8CE9-1E295CDC0CD3}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Hokusai", "src/hokusai/Hokusai.fsproj", "{53B3DB05-6F25-4C7D-83C5-63DFC931425A}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Hokusai", "src\hokusai\Hokusai.fsproj", "{53B3DB05-6F25-4C7D-83C5-63DFC931425A}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "LSystem", "src/lsystem/LSystem.fsproj", "{568BFE09-B390-443B-A2CF-B64EAA4EA379}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "LSystem", "src\lsystem\LSystem.fsproj", "{568BFE09-B390-443B-A2CF-B64EAA4EA379}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mandelbrot", "src/mandelbrot/Mandelbrot.fsproj", "{7AAC8BDF-F1A5-4CA3-8355-67F08765BF97}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mandelbrot", "src\mandelbrot\Mandelbrot.fsproj", "{7AAC8BDF-F1A5-4CA3-8355-67F08765BF97}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mario", "src/mario/Mario.fsproj", "{AC0CB754-893F-4E43-90C3-88F2BF0581C8}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Mario", "src\mario\Mario.fsproj", "{AC0CB754-893F-4E43-90C3-88F2BF0581C8}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pacman", "src/pacman/Pacman.fsproj", "{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pacman", "src\pacman\Pacman.fsproj", "{D5E88A83-E2FF-4CE3-96CA-052AB5EC0941}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pixi", "src/pixi/Pixi.fsproj", "{8E207908-1430-4435-B3E8-15E238DE1BDA}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pixi", "src\pixi\Pixi.fsproj", "{8E207908-1430-4435-B3E8-15E238DE1BDA}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pong", "src/pong/Pong.fsproj", "{B301D57D-20BC-4559-86E8-43D3C01AD8B7}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pong", "src\pong\Pong.fsproj", "{B301D57D-20BC-4559-86E8-43D3C01AD8B7}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SameGame", "src/samegame/SameGame.fsproj", "{F1B77ED4-51B2-445C-9D58-B9719A4735E6}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SameGame", "src\samegame\SameGame.fsproj", "{F1B77ED4-51B2-445C-9D58-B9719A4735E6}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Vue.TodoMVC", "src/vue-todomvc/Vue.TodoMVC.fsproj", "{4BA5F719-AB99-4119-8285-E8288D676609}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Vue.TodoMVC", "src\vue-todomvc\Vue.TodoMVC.fsproj", "{4BA5F719-AB99-4119-8285-E8288D676609}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "webgl-terrain", "src/webgl-terrain/WebGL.Terrain.fsproj", "{A8DC1EAE-E5F8-419B-A0C1-2B1B6C45F6D6}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "webgl-terrain", "src\webgl-terrain\WebGL.Terrain.fsproj", "{A8DC1EAE-E5F8-419B-A0C1-2B1B6C45F6D6}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Redux.TodoMVC", "src/redux-todomvc/Redux.TodoMVC.fsproj", "{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Redux.TodoMVC", "src\redux-todomvc\Redux.TodoMVC.fsproj", "{F0132EB7-1A0C-4583-9C5C-D9296B73C59A}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "d3map", "src/d3map/D3.Map.fsproj", "{F98BC72C-A3F4-4944-86F7-A323B39E7250}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "d3map", "src\d3map\D3.Map.fsproj", "{F98BC72C-A3F4-4944-86F7-A323B39E7250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fable", "Fable.proj", "{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fable", "src\Fable.proj", "{33AACEA3-0D8A-4D9C-B708-D7E335916E65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -242,17 +242,17 @@ Global
 		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x64.Build.0 = Release|x64
 		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x86.ActiveCfg = Release|x86
 		{F98BC72C-A3F4-4944-86F7-A323B39E7250}.Release|x86.Build.0 = Release|x86
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|x64.ActiveCfg = Debug|x64
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|x64.Build.0 = Debug|x64
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|x86.ActiveCfg = Debug|x86
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Debug|x86.Build.0 = Debug|x86
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|x64.ActiveCfg = Release|x64
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|x64.Build.0 = Release|x64
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|x86.ActiveCfg = Release|x86
-		{359AA3EF-88D5-4DBF-80A9-1F86F51587CA}.Release|x86.Build.0 = Release|x86
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|x64.ActiveCfg = Debug|x64
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|x64.Build.0 = Debug|x64
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|x86.ActiveCfg = Debug|x86
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Debug|x86.Build.0 = Debug|x86
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|x64.ActiveCfg = Release|x64
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|x64.Build.0 = Release|x64
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|x86.ActiveCfg = Release|x86
+		{33AACEA3-0D8A-4D9C-B708-D7E335916E65}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
