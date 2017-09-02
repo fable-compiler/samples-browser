@@ -1,6 +1,7 @@
 var fs = require("fs");
 var path = require("path");
 var webpack = require("webpack");
+var fableUtils = require("fable-utils");
 var json5 = require("./public/lib/json5.js");
 
 function resolve(filePath) {
@@ -18,14 +19,14 @@ function getSamples() {
   return samples;
 }
 
-var babelOptions = {
+var babelOptions = fableUtils.resolveBabelOptions({
   presets: [["es2015", { "modules": false }]],
   plugins: [["transform-runtime", {
     helpers: true,
     polyfill: false,
     regenerator: false
   }]]
-};
+});
 
 var isProduction = process.argv.indexOf("-p") >= 0;
 console.log("Bundling for " + (isProduction ? "production" : "development") + "...");

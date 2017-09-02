@@ -1,4 +1,4 @@
-#r "packages/FAKE/tools/FakeLib.dll"
+#r "packages/build/FAKE/tools/FakeLib.dll"
 #r "System.IO.Compression.FileSystem"
 
 open System
@@ -98,10 +98,14 @@ let root = __SOURCE_DIRECTORY__
 let gitOwner = "fable-compiler"
 let gitProject = "samples-browser"
 
-let dotnetcliVersion = "1.0.4"
+let dotnetcliVersion = "2.0.0"
 let mutable dotnetExePath = environVarOrDefault "DOTNET" "dotnet"
 
 Target "Clean" (fun () ->
+    !!"src/**/bin" ++ "test/**/bin" ++ "temp" |> CleanDirs
+    // Don't delete whole obj folder to leave Paket cache
+    !! "src/**/obj/*.nuspec" ++ "test/**/obj/*.nuspec"
+      ++ "public/**/bundle.js*" |> DeleteFiles
     !! "src/**/bin" ++ "src/**/obj/" |> CleanDirs
 )
 
