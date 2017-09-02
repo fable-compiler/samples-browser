@@ -13,36 +13,7 @@
 
 <body>
   {{{ navbar }}}
-  <div class="content" style="margin: 10px">
-    <h1>Fable Samples</h1>
-    <h2>Fun and Games</h2>
-    <ul id="games-list"></ul>
-    <h2>Productivity</h2>
-    <ul id="productivity-list"></ul>
-    <h2>Visualizations</h2>
-    <ul id="visual-list"></ul>
-  </div>
-  <script src="lib/json5.js"></script>
-  <script>
-    fetch('samples.json5')
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (json) {
-        var samplesJson = JSON5.parse(json);
-        ["games", "productivity", "visual"].forEach(function (category) {
-          var el = document.getElementById(category + "-list");
-          for (var key in samplesJson[category]) {
-            var node = document.createElement("li");
-            var link = document.createElement("a");
-            link.setAttribute("href", key);
-            link.appendChild(document.createTextNode(samplesJson[category][key].title));
-            node.appendChild(link);
-            el.appendChild(node);
-          }
-        });
-      });
-  </script>
+  {{{ body }}}
   <script>
     // Activate navbar burget button
     document.addEventListener('DOMContentLoaded', function () {

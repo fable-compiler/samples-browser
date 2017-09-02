@@ -13,36 +13,7 @@
 
 <body>
   <nav class="navbar"><div class="navbar-brand"><div class="navbar-item title is-4">Fable</div><div class="navbar-burger" data-target="navMenu"><span></span><span></span><span></span></div></div><div id="navMenu" class=" navbar-menu"><div class="navbar-start"><a class=" navbar-item" href="http://fable.io/">Home</a><a class=" navbar-item" href="http://fable.io/docs">Docs</a><a class=" navbar-item is-active" href="http://fable.io/samples-browser">Samples</a><a class=" navbar-item" href="http://fable.io/fableconf">FableConf</a></div><div class="navbar-end"><div class="navbar-item"><div class="field is-grouped"><p class="control"><a class="button twitter" href="https://twitter.com/FableCompiler"><span class="icon"><i class="fa fa-twitter"></i></span><span>Twitter</span></a></p><p class="control"><a class="button github" href="https://gitter.im/fable-compiler/Fable"><span class="icon"><i class="fa fa-comments"></i></span><span>Gitter</span></a></p></div></div></div></div></nav>
-  <div class="content" style="margin: 10px">
-    <h1>Fable Samples</h1>
-    <h2>Fun and Games</h2>
-    <ul id="games-list"></ul>
-    <h2>Productivity</h2>
-    <ul id="productivity-list"></ul>
-    <h2>Visualizations</h2>
-    <ul id="visual-list"></ul>
-  </div>
-  <script src="lib/json5.js"></script>
-  <script>
-    fetch('samples.json5')
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (json) {
-        var samplesJson = JSON5.parse(json);
-        ["games", "productivity", "visual"].forEach(function (category) {
-          var el = document.getElementById(category + "-list");
-          for (var key in samplesJson[category]) {
-            var node = document.createElement("li");
-            var link = document.createElement("a");
-            link.setAttribute("href", key);
-            link.appendChild(document.createTextNode(samplesJson[category][key].title));
-            node.appendChild(link);
-            el.appendChild(node);
-          }
-        });
-      });
-  </script>
+  <div class="content" style="margin:10px;"><h1>Fable Samples</h1><h2>Fun and Games</h2><ul><li><a href="funsnake">Funsnake</a></li><li><a href="mario">Super Fable Mario</a></li><li><a href="pacman">Pacman</a></li><li><a href="pixi">Pixi sample</a></li><li><a href="pong">Pong</a></li><li><a href="samegame">SameGame</a></li><li><a href="ozmo">Ozmo Game</a></li></ul><h2>Productivity</h2><ul><li><a href="redux-todomvc">React + Redux TodoMVC</a></li><li><a href="vue-todomvc">Vue TodoMVC</a></li></ul><h2>Visualizations</h2><ul><li><a href="d3map">D3 World Tour</a></li><li><a href="hokusai">Hokusai and Fractals</a></li><li><a href="lsystem">Interactive L-system generator</a></li><li><a href="mandelbrot">Mandelbrot Fractal</a></li><li><a href="webgl-terrain">WebGL Geometry Terrain</a></li></ul></div>
   <script>
     // Activate navbar burget button
     document.addEventListener('DOMContentLoaded', function () {
