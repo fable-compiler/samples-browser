@@ -110,7 +110,7 @@ let renderBody() =
 
 let render (info: PageInfo) =
     [ "title" ==> info.Title
-      "root" ==> Path.relative(info.TargetPath, publicPath)
+      "root" ==> Path.dirname(Path.relative(publicPath, info.TargetPath))
       "navbar" ==> (Navbar.root info.NavbarActivePage |> parseReactStatic)
       "body" ==> (renderBody() |> parseReactStatic) ]
     |> parseTemplate templatePath
