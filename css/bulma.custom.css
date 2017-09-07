@@ -5765,10 +5765,7 @@ html, body {
   background-color: #ebf5ff;
   margin-bottom: 10px; }
 
-.flex-1 {
-  flex: 1; }
-
-.flex-horizontal, .fable-header {
+.flex-horizontal {
   display: flex;
   align-items: center; }
 
@@ -5779,10 +5776,11 @@ html, body {
   align-items: center; }
 
 .fable-header {
-  padding: 20px;
   background: linear-gradient(to left, #87c5fd, white); }
+  .fable-header .hero-body {
+    padding: 2rem 0; }
   .fable-header .fable-logo {
-    max-height: 200px; }
+    max-height: 150px; }
     @media screen and (max-width: 600px) {
       .fable-header .fable-logo {
         max-height: 120px; } }
@@ -5792,6 +5790,8 @@ html, body {
 
 .fable-introduction {
   font-size: 1.3em; }
+  .fable-introduction p:not(:last-child) {
+    margin-bottom: 20px; }
 
 .fable-samples {
   margin: 0 5px; }
