@@ -390,7 +390,7 @@ table th {
   .is-size-7-fullhd {
     font-size: 0.75rem !important; } }
 
-.has-text-centered {
+.has-text-centered, .fable-introduction {
   text-align: center !important; }
 
 @media screen and (max-width: 768px) {
@@ -5761,13 +5761,25 @@ html, body {
   color: #202020 !important;
   border-color: #202020; }
 
+.fable-home-card {
+  background-color: #ebf5ff;
+  margin-bottom: 10px; }
+
 .flex-1 {
   flex: 1; }
 
+.flex-horizontal, .fable-header {
+  display: flex;
+  align-items: center; }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
 .fable-header {
   padding: 20px;
-  display: flex;
-  align-items: center;
   background: linear-gradient(to left, #87c5fd, white); }
   .fable-header .fable-logo {
     max-height: 200px; }
@@ -5779,8 +5791,7 @@ html, body {
         max-height: 80px; } }
 
 .fable-introduction {
-  font-size: 1.2em;
-  margin: 0 5px; }
+  font-size: 1.3em; }
 
 .fable-samples {
   margin: 0 5px; }
@@ -5788,3 +5799,6 @@ html, body {
     margin-top: 25px; }
   .fable-samples .media-content h1 {
     margin-bottom: 5px; }
+
+.content h1 > a, .content h2 > a, .content h3 > a, .content h4 > a, .content h5 > a, .content h6 > a {
+  color: #202020; }
