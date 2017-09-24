@@ -172,6 +172,7 @@ let rec update (snake:(float*float*float*float) List) food () =
 // ------------------------------------------------------------------
 // Main function
 let main() =
+
     // Capture arrows keys to move the snake
     window.addEventListener_keydown(fun e ->
         if moveDone then
@@ -182,10 +183,11 @@ let main() =
             moveDone <- false
         :> obj)
 
-    // Capture MSPointerDown event for IE to move the snake (touch events for Chrome & iOS are in the html code)
-    canvas.addEventListener("pointerdown", unbox(fun e ->
-        let ev= unbox<MSPointerEvent> e
-        touch <- (ev.pageX - canvas.offsetLeft, ev.pageY - canvas.offsetTop)))
+
+    // Capture mouse down for mouse/touch
+    canvas.addEventListener_mousedown(fun e -> 
+        (touch <- (e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop)) :> obj
+        )
 
     // Draw the walls only once
     drawWall wall
