@@ -5,6 +5,7 @@
 - Restore NPM dependencies: `yarn install`
 - Restore Nuget dependencies: `dotnet restore`
 - **Move to src folder**: `cd src`
+- Restore Nuget dependencies to get fable cli working: `dotnet restore`
 - Start Fable and Webpack dev server: `dotnet fable yarn-start`
 - In your browser, open `localhost:8080/[EXAMPLE]` (e.g. `http://localhost:8080/ozmo`)
 
