@@ -19,3 +19,4 @@ run `dotnet fable yarn-build`.
 - Add the information about your sample to `public/samples.json5`: id, entry file (usually the .fsproj), title and description; in one of the three categories: "games", "visual" or "productivity".
 - Add one folder named after the id of the sample to `src` directory and another one to `public`. The first one will contain the F# (and maybe JS) source files, while the second contains the public assets for the sample (like index.html, images, etc).
 - Add the project to the `Fable.Samples.sln` solution: `dotnet sln add src/my-sample/My.Sample.fsproj`
+- Restore NuGet dependencies: `dotnet restore`
