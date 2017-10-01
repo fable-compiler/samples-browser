@@ -57,6 +57,25 @@ let skipLast xs =
         | head :: tail -> auxSkipLast (List.append current [head]) tail
     auxSkipLast [] xs
 
+// Touch / Mouse listeners
+[<Emit("$0 in $1")>]
+let checkIn (listener: string) (o: obj) : bool = jsNative
+
+let setTouchListener = 
+  if (checkIn "ontouchstart" canvas) then
+      // Capture touchstart for mobile / touch devices
+      canvas.addEventListener("touchstart", unbox(fun e ->
+          let touchEv= unbox<TouchEvent> e
+          let ev = touchEv.changedTouches.Item 0
+          touch <- (ev.pageX - canvas.offsetLeft, ev.pageY - canvas.offsetTop)))
+  else
+      // Capture mousedown for browsers
+      canvas.addEventListener("mousedown", unbox(fun e -> 
+          let ev = unbox<MouseEvent> e
+          touch <- (ev.pageX - canvas.offsetLeft, ev.pageY - canvas.offsetTop)))
+  |> ignore
+
+
 // Move the snake to next position, if snake eat some food increase snake size in one link
 let move xMove yMove snake food =
     match snake with
@@ -183,13 +202,10 @@ let main() =
             moveDone <- false
         :> obj)
 
-
-    // Capture mouse down for mouse/touch
-    canvas.addEventListener_mousedown(fun e -> 
-        (touch <- (e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop)) :> obj
-        )
-
-    // Draw the walls only once
+    // Capture touch events
+    setTouchListener
+    
+    // Draw the walls only once 
     drawWall wall
 
     // Start the game with basic snake and ramdom food
