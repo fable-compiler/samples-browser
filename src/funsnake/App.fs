@@ -61,17 +61,17 @@ let skipLast xs =
 [<Emit("$0 in $1")>]
 let checkIn (listener: string) (o: obj) : bool = jsNative
 
-let setTouchListener = 
+let setTouchListener()  = 
   if (checkIn "ontouchstart" canvas) then
       // Capture touchstart for mobile / touch devices
-      canvas.addEventListener("touchstart", unbox(fun e ->
-          let touchEv= unbox<TouchEvent> e
+      canvas.addEventListener("touchstart", !^Browser.EventListener(fun e ->
+          let touchEv = e :?> TouchEvent
           let ev = touchEv.changedTouches.Item 0
           touch <- (ev.pageX - canvas.offsetLeft, ev.pageY - canvas.offsetTop)))
   else
       // Capture mousedown for browsers
-      canvas.addEventListener("mousedown", unbox(fun e -> 
-          let ev = unbox<MouseEvent> e
+      canvas.addEventListener("mousedown", !^Browser.EventListener(fun e -> 
+          let ev = e :?> MouseEvent
           touch <- (ev.pageX - canvas.offsetLeft, ev.pageY - canvas.offsetTop)))
   |> ignore
 
@@ -203,7 +203,7 @@ let main() =
         :> obj)
 
     // Capture touch events
-    setTouchListener
+    setTouchListener()
     
     // Draw the walls only once 
     drawWall wall
