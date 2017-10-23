@@ -13,25 +13,313 @@
 </head>
 
 <body>
-  <nav class="navbar"><div class="navbar-brand"><div class="navbar-item title is-4">Fable</div><div class="navbar-burger" data-target="navMenu"><span></span><span></span><span></span></div></div><div id="navMenu" class=" navbar-menu"><div class="navbar-start"><a class=" navbar-item" href="/">Home</a><a class=" navbar-item" href="/repl">REPL</a><a class=" navbar-item" href="/docs">Docs</a><a class=" navbar-item is-active" href="/samples-browser">Samples</a><a class=" navbar-item" href="/fableconf">FableConf</a></div><div class="navbar-end"><div class="navbar-item"><div class="field is-grouped"><p class="control"><a class="button twitter" href="https://twitter.com/FableCompiler"><span class="icon"><i class="fa fa-twitter"></i></span><span>Share the love!</span></a></p><p class="control"><a class="button github" href="https://gitter.im/fable-compiler/Fable"><span class="icon"><i class="fa fa-comments"></i></span><span>Chat</span></a></p><p class="control"><a class="button github" href="https://github.com/fable-compiler/Fable"><span class="icon"><i class="fa fa-github"></i></span><span>Contribute</span></a></p></div></div></div></div></nav>
-  <div style="overflow:hidden;"><section class="hero fable-header"><div class="hero-body"><div class="container"><div class="columns is-vcentered"><div class="column"><img class="fable-logo" src="/img/shared/fable_logo.png"/></div><div class="column has-text-right"><h1 class="title is-1">Browser Samples</h1><h1 class="subtitle is-4">Explore Fable through fun demos!</h1></div></div></div></div></section><div class="columns" style="margin-top:10px;"><div class="column" style="padding:0;"></div><div class="column is-two-thirds"><div class="fable-introduction"><p>Who said learning cannot be fun? These samples will help you get started with different kind of Fable web apps, like games, visualizations or productivity apps. You can also find <a href="https://github.com/fable-compiler/samples-electron"> samples to create Github Electron apps</a> and <a href="https://nodejs.org/">Node</a> samples are coming too. Don&#39;t forget to check the <a href="https://github.com/kunjee17/awesome-fable">fable-awesome list</a> for more info about awesome Fable projects and tutorials!</p>
-<p>Check the <a href="https://github.com/fable-compiler/samples-browser">Github repository</a> to see the source code of the samples and clone it to edit them at will. If you find something missing or have a great idea for a sample, don&#39;t hesitate to <a href="https://github.com/fable-compiler/samples-browser#adding-a-new-sample">send us a pull request</a>.</p>
-</div></div><div class="column" style="padding:0;"></div></div><div class="columns"><div class="column"></div><div class="column is-two-thirds"><div class="fable-samples"><h1 class="title is-2">Fun and Games</h1><ul><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="mario"><img src="img/mario.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="mario">Super Fable Mario</a></h1><p><p>Mario clone, based on functional reactive <a href="http://debug.elm-lang.org/edit/Mario.elm">sample written in Elm</a>. The Fable version is using HTML 5 canvas to render the background and an <code>img</code> tag showing the Mario (using animated GIFs).</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="ozmo"><img src="img/ozmo.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="ozmo">Ozmo Game</a></h1><p><p>Phil Trelford&#39;s <a href="https://twitter.com/ptrelford/status/475395178208174080">classic Ozmo game</a>, originally hosted <a href="https://bitbucket.org/ptrelford/ozmo">on BitBucket</a> ported to Fable! Shows how to handle keyboard events and use HTML5 canvas. You can also get it (as a JavaScript app) from the <a href="https://www.microsoft.com/en-gb/store/apps/ozmo/9nblggh4rjng">Windows Store</a>.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="pacman"><img src="img/pacman.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="pacman">Pacman</a></h1><p><p>Pacman finds himself in a grid filled with monsters... This is the most complex sample here. It involves rendering the maze, AI for the ghosts, user interaction and even playing sound effects. The game has some brief commentary, but if you want to learn Fable, look at the above examples first.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="pong"><img src="img/pong.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="pong">Pong</a></h1><p><p>This Fable version of pong is using HTML 5 canvas to render a whole two player pong game.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="samegame"><img src="img/samegame.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="samegame">SameGame</a></h1><p><p>This demo shows a Fable implementation of SameGame. The functional implementation of the game follows the type-first design approach and consists of three main components: types, game logic and front end. Contributed by <a href="https://twitter.com/leifbattermann">Leif Battermann</a>.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="funsnake"><img src="img/funsnake.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="funsnake">Funsnake</a></h1><p><p>Classic snake game that can be played either by keyboard or mouse/touch. Originally developed by <a href="https://twitter.com/ayuscode">Alberto Ayuso</a> for FunScript.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="pixi"><img src="img/pixi.jpeg"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="pixi">Pixi sample</a></h1><p><p>Simple renderization with <a href="http://www.pixijs.com/">PixiJS</a>, a fast and flexible library to render 2D WebGL content.</p>
-</p></div></article></div></div></ul><h1 class="title is-2">Productivity</h1><div class="content fable-introduction"><p>These samples are here just to show how easy is to interact with JS libraries from Fable, including advanced UI frameworks like React or Vue. However, the recommended way to create Single Page Applications is to use <a href="https://fable-elmish.github.io/">Fable.Elmish</a>. Check their extensive documentation to learn how thanks to the <code>model-view-update</code> architecture you&#39;ll never mess up with the UI state any more.</p>
-</div><ul><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="redux-todomvc"><img src="img/redux.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="redux-todomvc">React + Redux TodoMVC</a></h1><p><p>This is a port of <a href="https://github.com/reactjs/redux/tree/master/examples/todomvc">Redux TodoMVC</a> and shows how easy is to create a Fable web app only using JS libraries. <a href="http://redux.js.org/">Redux</a> is a predictable state container for JavaScript apps, easy to use and compatible with functional patterns.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="vue-todomvc"><img src="img/vue.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="vue-todomvc">Vue TodoMVC</a></h1><p><p>Shows how to create a TODO list using <a href="http://vuejs.org/">Vue.js</a>. Unlike React, Vue relies on a template language separated from logic code and closer to HTML. Please note this is an early experiment so the code may not look as idiomatic F#.</p>
-</p></div></article></div></div></ul><h1 class="title is-2">Visualizations</h1><ul><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="d3map"><img src="img/d3map.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="d3map">D3 World Tour</a></h1><p><p>This demo is a Fable port of <a href="https://bl.ocks.org/mbostock/4183330">Mike Bostock&#39;s World Tour</a> D3 demo. It uses the D3 library to create a visualization that loops through all countries of the world and shows them on the globe one by one.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="hokusai"><img src="img/wave.jpg"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="hokusai">Hokusai and Fractals</a></h1><p><p>This demo is based on Tomas Petricek&#39;s <a href="http://tomasp.net/blog/2014/japan-advent-art-en/">F# Advent Calendar post</a> that explores Japanese art using the (now defunct) Freebase type provider and renders The Great Wave by Hokusai using the Julia fractal.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="lsystem"><img src="img/lsystem.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="lsystem">Interactive L-system generator</a></h1><p><p>This demo is based on <a href="https://github.com/Andrea/Lsystem">L-system workshop</a> by Andrea Magnorsky and Ross McKinlay. Rather than working on the tasks they gave us, Tomas Petricek compiled it with Fable, so that you can play with it in a browser!</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="webgl-terrain"><img src="img/webGLTerrain.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="webgl-terrain">WebGL Geometry Terrain</a></h1><p><p>This demo is a Fable port of the <a href="http://threejs.org/examples/#webgl_geometry_terrain">WebGL Geometry Terrain</a> three.js demo. It uses the three.js library to randomly generate a 3D terrain which can be navigated in a first-person view. The code was originally written by <a href="https://github.com/jmquigs">John Quigley</a> for FunScript.</p>
-</p></div></article></div></div><div class="card"><div class="card-content"><article class="media"><figure class="media-left"><figure class="image is-128x128"><a href="mandelbrot"><img src="img/mandelbrot.png"/></a></figure></figure><div class="media-content"><h1 class="title is-4"><a href="mandelbrot">Mandelbrot Fractal</a></h1><p><p>Generate fractals with HTML5 canvas.</p>
-</p></div></article></div></div></ul></div></div><div class="column"></div></div></div>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item title is-4">Fable</div>
+      <div class="navbar-burger" data-target="navMenu"><span></span><span></span><span></span></div>
+    </div>
+    <div id="navMenu" class=" navbar-menu">
+      <div class="navbar-start"><a class=" navbar-item" href="/">Home</a><a class=" navbar-item" href="/repl">REPL</a><a class=" navbar-item" href="/docs">Docs</a>
+        <a
+          class=" navbar-item is-active" href="/samples-browser">Samples</a><a class=" navbar-item" href="/fableconf">FableConf</a></div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control"><a class="button twitter" href="https://twitter.com/FableCompiler"><span class="icon"><i class="fa fa-twitter"></i></span><span>Share the love!</span></a></p>
+            <p
+              class="control"><a class="button github" href="https://gitter.im/fable-compiler/Fable"><span class="icon"><i class="fa fa-comments"></i></span><span>Chat</span></a></p>
+              <p
+                class="control"><a class="button github" href="https://github.com/fable-compiler/Fable"><span class="icon"><i class="fa fa-github"></i></span><span>Contribute</span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div style="overflow:hidden;">
+    <section class="hero fable-header">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column"><img class="fable-logo" src="/img/shared/fable_logo.png" /></div>
+            <div class="column has-text-right">
+              <h1 class="title is-1">Pixi Samples</h1>
+              <h1 class="subtitle is-4">Explore Fable and Pixi through fun samples!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-two-thirds">
+        <div class="fable-samples">
+          <ul>
+            <div class="card">
+              <div class="card-content">
+                <article class="media">
+                  <figure class="media-left">
+                    <figure class="image is-128x128"><a href="pixi"><img src="img/pixijs.png"/></a></figure>
+                  </figure>
+                  <div class="media-content">
+                    <h1 class="title is-4"><a href="basic">Basic</a></h1>
+                  </div>
+                </article>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="container"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="container">Container</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="containerPivot"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="containerPivot">Container Pivot</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="ssa"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="ssa">Sprite Sheet Animation</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>                       
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="click"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="click">Click</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>               
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="tilingSprite"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="tilingSprite">Tiling Sprite</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>   
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="text"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="text">Text</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>     
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="graphics"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="graphics">Graphics</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>   
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="video"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="video">Video</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>                  
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="renderTexture"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="renderTexture">Render Texture</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div> 
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="texturedMesh"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="texturedMesh">Textured Mesh</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>     
+              
+
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="customFilters"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="customFilters">Custom Filters</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>   
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="dragging"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="dragging">Dragging</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>                     
+              
+              <div class="card">
+                <div class="card-content">
+                  <article class="media">
+                    <figure class="media-left">
+                      <figure class="image is-128x128"><a href="particles"><img src="img/pixijs.png"/></a></figure>
+                    </figure>
+                    <div class="media-content">
+                      <h1 class="title is-4"><a href="particles">Pixi-Particles</a></h1>
+                    </div>
+                  </article>
+                </div>              
+              </div>    
+                   
+              <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="animejs"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="animejs">tweening using animejs lib</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>   
+                
+                <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="sound"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="sound">Sound using pixi-sound</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>   
+                
+                <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="dragonParticle"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="dragonParticle">Nifty particles around a dragon</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>      
+                
+                <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="textureSwap"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="textureSwap">Texture Swap</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>        
+                
+                <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="tinting"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="tinting">Tinting</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>         
+                
+                <div class="card">
+                  <div class="card-content">
+                    <article class="media">
+                      <figure class="media-left">
+                        <figure class="image is-128x128"><a href="draggor"><img src="img/pixijs.png"/></a></figure>
+                      </figure>
+                      <div class="media-content">
+                        <h1 class="title is-4"><a href="draggor">Game of Cogs</a></h1>
+                      </div>
+                    </article>
+                  </div>              
+                </div>                       
+          </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
   <script>
     // Activate navbar burget button
     document.addEventListener('DOMContentLoaded', function () {
